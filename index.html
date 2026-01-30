@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Lauryn 💜</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <canvas id="bg-canvas"></canvas>
+    
+    <div class="scroll-container">
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="sparkle sparkle-1">✦</div>
+                <div class="sparkle sparkle-2">✧</div>
+                <div class="sparkle sparkle-3">✦</div>
+                <h1 class="title">
+                    <span class="title-line">Happy Birthday</span>
+                    <span class="name">Lauryn</span>
+                </h1>
+                <p class="subtitle">A day as beautiful as you</p>
+                <div class="scroll-hint">
+                    <span>Scroll down</span>
+                    <div class="scroll-arrow"></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Message Section -->
+        <section class="message-section">
+            <div class="message-container">
+                <div class="floating-hearts">
+                    <span class="heart">♡</span>
+                    <span class="heart">♡</span>
+                    <span class="heart">♡</span>
+                </div>
+                <h2>To My Love</h2>
+                <p class="love-message">
+                    Every moment with you feels like magic. Your smile lights up my world,
+                    and your laughter is my favorite melody. On this special day, I want you
+                    to know how incredibly grateful I am to have you in my life.
+                </p>
+                <p class="love-message">
+                    You make every day brighter, every challenge easier, and every celebration
+                    more meaningful. Here's to another year of adventures, laughter, and love.
+                </p>
+                <div class="signature">Forever Yours 💜</div>
+            </div>
+        </section>
+
+        <!-- Video Section -->
+        <section class="video-section">
+            <div class="video-container">
+                <h2>A Special Message For You</h2>
+                <div class="video-wrapper">
+                    <!-- Replace the src with your video file -->
+                    <video id="birthday-video" controls poster="video-poster.jpg">
+                        <source src="birthday-video.mp4" type="video/mp4">
+                        <!-- You can also add other formats -->
+                        <source src="birthday-video.webm" type="video/webm">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-placeholder">
+                        <div class="placeholder-icon">🎬</div>
+                        <p>Upload your video as <strong>birthday-video.mp4</strong></p>
+                        <p class="placeholder-hint">Place it in the same folder as this website</p>
+                    </div>
+                </div>
+                <p class="video-caption">Press play to watch 💜</p>
+            </div>
+        </section>
+
+        <!-- Final Section -->
+        <section class="final-section">
+            <div class="final-content">
+                <div class="cake-emoji">🎂</div>
+                <h2>Make a Wish!</h2>
+                <p>May all your dreams come true</p>
+                <div class="birthday-year">2026</div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
