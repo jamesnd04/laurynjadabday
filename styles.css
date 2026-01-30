@@ -306,55 +306,13 @@ body {
         inset 0 0 0 1px rgba(196, 167, 231, 0.2);
 }
 
-.video-wrapper video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 20px;
-}
-
-.video-placeholder {
+.video-wrapper iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(135deg, 
-        rgba(45, 27, 78, 0.9), 
-        rgba(61, 90, 128, 0.9));
-    z-index: 1;
-    pointer-events: none;
-}
-
-.video-wrapper video:not([src=""]) ~ .video-placeholder,
-.video-wrapper video[src] ~ .video-placeholder {
-    display: none;
-}
-
-.placeholder-icon {
-    font-size: 4rem;
-    margin-bottom: 1rem;
-    animation: pulse 2s ease-in-out infinite;
-}
-
-@keyframes pulse {
-    0%, 100% { transform: scale(1); opacity: 0.8; }
-    50% { transform: scale(1.1); opacity: 1; }
-}
-
-.video-placeholder p {
-    color: var(--text-light);
-    font-size: 1.1rem;
-    margin-bottom: 0.5rem;
-}
-
-.placeholder-hint {
-    color: var(--text-dim);
-    font-size: 0.9rem !important;
+    border-radius: 20px;
 }
 
 .video-caption {

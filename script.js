@@ -339,22 +339,6 @@ window.addEventListener('resize', () => {
     particleMaterial.uniforms.pixelRatio.value = renderer.getPixelRatio();
 });
 
-// Video placeholder handling
-const video = document.getElementById('birthday-video');
-const placeholder = document.querySelector('.video-placeholder');
-
-video.addEventListener('loadeddata', () => {
-    if (placeholder) {
-        placeholder.style.display = 'none';
-    }
-});
-
-video.addEventListener('error', () => {
-    if (placeholder) {
-        placeholder.style.display = 'flex';
-    }
-});
-
 // Intersection Observer for scroll animations
 const observerOptions = {
     threshold: 0.2,
